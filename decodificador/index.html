@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/script.css"
+      media="screen"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@325&display=swap"
+      rel="stylesheet"
+    />
+    <title>Decodificador de Texto</title>
+  </head>
+  <body>
+    <!--Container-->
+    <div class="container">
+      <div class="item-img-logo">
+        <img src="./assets/img/logo.png" alt="" />
+      </div>
+
+      <div class="item item1">
+        <div class="item1-input">
+          <p class="item1-input-text-title">Digite seu texto</p>
+          <textarea class="item1-input-text"></textarea>
+        </div>
+
+        <div class="item1-buttons">
+          <div class="item1-buttons-action">
+            <div class="item1-buttons-msg">
+              <p>
+                <span class="item1-buttons-msg-exclamation"
+                  ><img
+                    src="./assets/img/bi_exclamation-circle-fill.png"
+                    alt="" /></span
+                >&nbsp;Apenas letras minúsculas e sem acento.
+              </p>
+            </div>
+            <button type="button" class="button-encrypt" onclick="getEncrypt()">
+              Criptografar
+            </button>
+            <button type="button" class="button-decrypt" onclick="getDecrypt(document.querySelector('.item1-input-text').value)">
+              Descriptografar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item item2">
+        <div class="item2-right">
+
+          <p class="result"></p>
+
+          <img
+            src="./assets/img/img.png"
+            alt="pesquisar"
+            class="item2-right-img"/>
+            
+           
+
+          <div class="item2-box-text">
+            <p class="item2-box-text-title">Nenhuma mensagem encontrada</p>
+            <p class="item2-box-text-subtitle">
+              Digite um texto que você deseja criptografar ou descriptografar
+            </p>
+          </div>
+          <div class="copyButton" style="display: none">
+            <button class="copy" onclick="copyToClipboard()">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy;2024 - Todos os direitos reservados</p>
+      <p>Descodificador de texto</p>
+      <p>Desenvolvido em HTML, CSS e JS pelo aluno Alura T6 ONE -  Teophilo Silva</p>
+  </footer>
+  
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
