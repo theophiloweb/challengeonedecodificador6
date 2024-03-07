@@ -1,0 +1,239 @@
+/* Fonts Google */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e5e5;
+  width: 100%;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+textarea {
+  width: 95%;
+  height: auto;
+  padding: 0.75rem 1rem; /* Usei rem para o padding */
+  box-sizing: border-box;
+  border: 0.125rem solid #ccc; /* Usei rem para a borda */
+  border-radius: 0.5rem; /* Usei rem para a borda */
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+button {
+  width: 328px; /* Definindo a largura como automática para ajustar ao conteúdo */
+  height: 4.25rem; /* Usei rem para a altura */
+  border-radius: 3rem; /* Usei rem para o border-radius */
+  
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0; /* Fundo suave e claro */
+  
+  justify-content: center;
+  align-items: center;
+  font-size: 14px; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+}
+
+
+.container {
+  height: auto;
+  display: flex; 
+   flex: 1;  
+}
+
+.item-img-logo{  
+  margin-right: 5rem ;
+}
+
+.item1 {
+  width: 100%; /* Usei rem para a largura */
+  height: 43.75rem; /* Usei rem para a altura */ 
+}
+
+.item1-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.item1-input-text-title {
+  margin-bottom: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.item1-input-text {
+  width: 100%; /* Defina a largura como 100% para preencher todo o espaço disponível */
+  height: auto; /* Permita que a altura seja ajustada automaticamente com base no conteúdo */
+  padding: 0.75rem 1rem; /* Ajuste o padding conforme necessário */
+  box-sizing: border-box;
+  border: 0.125rem solid #ccc; /* Ajuste a espessura da borda conforme necessário */
+  border-radius: 0.5rem; /* Ajuste o raio da borda conforme necessário */
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.item1-buttons { 
+  display: flex;
+  justify-content: flex-start;
+  
+  margin: 25rem 0 0 0rem; /* Usei rem para as margens */  
+}
+
+.item1-buttons-action {   
+  display: inline !important; /* Usei display inline */
+}
+
+.item1-buttons-msg {
+  font-size: 0.75rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+
+.item2 {   
+  width:40rem; /* Usei rem para a largura */
+  height: 43.75rem; /* Usei rem para a altura */ 
+  position: relative; /* necessário para que a posição absoluta funcione */
+  overflow: hidden; /* oculta qualquer conteúdo que ultrapasse os limites do contêiner */ 
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item2-right {
+  margin: 0 auto;
+  background-color: white;
+  width: 25rem; /* Usei rem para a largura */
+  height: 43.75rem; /* Usei rem para a altura */  
+  border-radius: 2rem;
+ 
+}
+
+.item2-right-img {
+  position: absolute; /* posicionamento absoluto em relação ao contêiner */  
+  top:150px;
+  width: 21rem; /* Usei rem para a largura */
+  height: 19rem; /* Usei rem para a altura */
+}
+
+.item2-box-text {
+  text-align: center;
+  position: absolute; /* posicionamento absoluto em relação ao contêiner */ 
+  top:550px; 
+}
+
+.item2-box-text-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.item2-box-text-subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: gray;
+  font-size: 1rem;
+  margin-top: 1rem;
+}´
+
+.copyButton{
+  margin: 0 auto;
+}
+.copy {
+  background-color: #d8dfe8;
+  border: 0.0625rem solid rgb(31, 87, 105); /* Usei rem para a borda */
+  color: darkblue;
+  margin: 37rem 0rem 0rem 2rem; /* Usei rem para a margem */
+}
+
+.button-encrypt {
+  background-color: darkblue;
+  color: white;
+}
+
+.button-decrypt {
+  background-color: #d8dfe8;
+  border: 0.0625rem solid rgb(31, 87, 105); /* Usei rem para a borda */
+  color: darkblue;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem; /* Usei rem para o padding */
+  }
+
+  .item1, .item2 {
+    width: 100%;
+    max-width: 21.875rem; /* Usei rem para a largura */
+    margin-bottom: 1.25rem; /* Usei rem para a margem */
+  }
+
+  .item1-buttons, .item1-buttons-action {
+    margin: 1.25rem 0;
+  }
+
+  .copyButton {
+    margin-top: 1.25rem; /* Usei rem para a margem */
+  }
+
+  .copy {
+    width: 100%;
+  }
+
+  /* Ajuste do tamanho dos botões para dispositivos móveis */
+  button {
+    width: 100%; /* Definindo a largura como 100% */
+  }
+}
+
+/* Estilos para tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    justify-content: center;
+    padding: 1.875rem; /* Usei rem para o padding */
+  }
+
+  .item {
+    margin-right: 1.25rem; /* Usei rem para a margem */
+  }
+}
+
+/* Estilos para TVs */
+@media screen and (min-width: 1024px) {
+  .container {
+    justify-content: space-around;
+    padding: 3.125rem; /* Usei rem para o padding */
+  }
+
+  .item {
+    margin-right: 3.125rem; /* Usei rem para a margem */
+  }
+}
