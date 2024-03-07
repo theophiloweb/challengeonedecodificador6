@@ -42,11 +42,6 @@ Este projeto é básico e pode ser aprimorado de diversas maneiras, como:
 
 Esperamos que este sistema seja útil para você!
 
-## Observações
-
-- Utilize a URL real do seu repositório GitHub e do curso Alura nos "Links úteis".
-- Este README.md é apenas um exemplo, você pode adaptá-lo de acordo com suas necessidades.
-
 ## Melhorias adicionais
 
 - Você pode adicionar imagens para ilustrar o sistema.
